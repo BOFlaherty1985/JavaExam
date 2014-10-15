@@ -11,7 +11,7 @@ import java.util.Date;
  */
 public class run_chapter6_polymorphism {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         /*
         Polymorphism
@@ -47,16 +47,17 @@ public class run_chapter6_polymorphism {
         emp_one.endProjectWork();
         emp_two.endProjectWork();
 
-        // Data Binding
+        // Data Binding - employee one
         System.out.println(emp_one.firstName);
         System.out.println(emp_one.lastName);
         System.out.println(emp_one.dateOfBirth);
         System.out.println(emp_one.emailAddress);
-
+        // Data Binding - employee two
         System.out.println(emp_two.firstName);
         System.out.println(emp_two.lastName);
         System.out.println(emp_two.dateOfBirth);
         System.out.println(emp_two.emailAddress);
+
     }
 
 }

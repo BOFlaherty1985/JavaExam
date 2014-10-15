@@ -11,6 +11,19 @@ public class ArrayAccess {
 
     public static void main(String[] args) {
 
+        /*
+            Exceptions - Rules to Remember
+
+            * A try block may be followed by multiple catch blocks, and the catch blocks may be followed by a single
+              finally block
+            * A try block may be followed by either a catch or a finally block or both. However, a finally block alone
+              wouldn't suffice if code in the try block throws a checked exception.
+            * The try, catch and finally block can't not exist independently.
+            * The finally block can't appear before a catch block.
+            * A finally block always executes, regardless of whether the code throws an exception.
+
+        */
+
         // invalid array index (maximum value is [3])
         String[] students = {"Benjamin", "Joe", "Matthew"};
 
@@ -19,6 +32,11 @@ public class ArrayAccess {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("error thrown");
             e.printStackTrace();
+        } finally {
+            /*
+                Exam Tip - The finally block will execute regardless of whether the try blocks throws an exception
+             */
+              System.out.println("Finally Block is always executed");
         }
 
         System.out.println("code has continued to run");
@@ -54,7 +72,7 @@ public class ArrayAccess {
             * This newly created object is then handed to the JVM, the JVM blows a siren in the form of this exception
               and looks for an appropriate code block that can "handle" this exception.
 
-         */
+        */
 
     }
 
