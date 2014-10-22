@@ -52,7 +52,6 @@ public class VendingMachineCalculation {
         // validate user inputs, i.e. have they entered a valid coin value?
         while(balance.compareTo(MIN_BALANCE) == -1) {
 
-            // retrieves user coin input
             System.out.println("Please enter a coin...");
 
             Coin inserted_coin = new Coin(scanner.nextBigDecimal());
@@ -68,7 +67,6 @@ public class VendingMachineCalculation {
             } else {
                 System.out.println("Invalid selection, please enter a valid coin value.");
             }
-
         }
 
         return balance;
@@ -105,7 +103,7 @@ public class VendingMachineCalculation {
         return balance;
     }
 
-    public static int[] calculateVendingMachineChange(int[] coin_totals, BigDecimal balance) {
+    static int[] calculateVendingMachineChange(int[] coin_totals, BigDecimal balance) {
 
         String[] change_denomination = {"1.0", "0.5", "0.2", "0.1"};
 
@@ -123,9 +121,9 @@ public class VendingMachineCalculation {
 
         if(!balance.equals(ZERO_VALUE)) {
 
-            BigDecimal fiftyPence = balance.remainder(remainder);
+            BigDecimal monetary_remainder = balance.remainder(remainder);
 
-            if (fiftyPence.equals(ZERO_VALUE)) {
+            if (monetary_remainder.equals(ZERO_VALUE)) {
                 balance = balance.subtract(remainder);
                 coin_totals[arrayIndex]--;
             }
