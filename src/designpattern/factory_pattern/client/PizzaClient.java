@@ -3,6 +3,7 @@ package designpattern.factory_pattern.client;
 import designpattern.factory_pattern.factory.ChicagoPizzaStore;
 import designpattern.factory_pattern.factory.NYPizzaStore;
 import designpattern.factory_pattern.factory.PizzaStore;
+import designpattern.factory_pattern.model.Pizza;
 
 /**
  * Order Pizza Client
@@ -18,7 +19,7 @@ public class PizzaClient {
 
     public static void main(String[] args) {
 
-        nyPizzaStore.orderPizza("cheese");
+        Pizza pizza = nyPizzaStore.orderPizza("cheese");
         chiPizzaStore.orderPizza("meat");
 
     }

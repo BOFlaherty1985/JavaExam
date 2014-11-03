@@ -37,6 +37,8 @@ public abstract class PizzaStore {
         return pizza;
     }
 
+    // The factory itself doesn't know which object it will create, this is decided by the subclasses of the factory
+    // that implement the factory method (in this example, 'createPizza')
     protected abstract Pizza createPizza(String type);
 
 }
