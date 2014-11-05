@@ -147,7 +147,7 @@ public class StringClass {
             resulting output.
 
             By default the indexOf() method starts its search from the first char of the target String.
-            You can however set the starting position, to an integer number. For exaple, to find the
+            You can however set the starting position, to an integer number. For example, to find the
             2nd instances of the given value.
 
          */

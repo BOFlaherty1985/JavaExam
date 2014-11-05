@@ -35,7 +35,7 @@ public class VariableScope {
         * Local variables the shortest scope.
         * Local variables are only accessible within the method or flow statement in which they're defined.
         * The scope of a local variable depends on the location of its declaration within a method. A local variable
-          defined wtihin a loop, if-else or switch statements is limited to these constructs only.
+          defined within a loop, if-else or switch statements is limited to these constructs only.
         * Local variables defined outside of these constructs are available to the entire method.
 
         Exam Tip

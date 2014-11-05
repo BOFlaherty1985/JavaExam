@@ -18,7 +18,6 @@ public class SwitchStatement {
             * For each value within the switch statement, you can determine a set of statements to execute.
 
          */
-
         int marks = 10;
 
         switch (marks) {
@@ -71,13 +70,56 @@ public class SwitchStatement {
         switch(marks * 2) {
             case 10:
                 System.out.println("Expression Result Equals 10");
+                break;
             case 20:
                 System.out.println("Expression Result Equals 20");
+                break;
             case 30:
                 System.out.println("Expression Result Equals 30");
+                break;
             default:
                 System.out.println("Default message");
         }
+
+        /*
+            Values passed to the label case of a switch statement
+
+            * Case values should be compile-time constants.
+            * The values of a case label must be a compile-time constant value; that is, the value should be known at the
+              time of code compilation.
+            * You can use variables in any expression if they're marked final because the value of final variables can't
+              change once they've been initialised.
+            * Null isn't allowed as a case label.
+            * Code that tries to compare the variable passed to a switch statement with null will not compile.
+
+         */
+
+        int condition = 300;
+
+        final int a = 100;
+        final int b = 200;
+        final int multiplyBy = 3;
+
+        switch (condition) {
+            case a * multiplyBy:
+                System.out.println("Case A equals " + a * multiplyBy);
+                break;
+            case b * multiplyBy:
+                System.out.println("Case B " + b * multiplyBy);
+                break;
+            default:
+                System.out.println("Default value");
+        }
+
+
+        /*
+            Use of Break Statements within a switch statement.
+
+            * A break statement within a switch statement will exit the switch construct if executed.
+            * In the absence of a break statement, control will fall through all of the remaining case statements and
+              execute the code following the matched case.
+
+         */
 
     }
 

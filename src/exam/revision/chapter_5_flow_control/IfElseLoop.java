@@ -40,7 +40,7 @@ public class IfElseLoop {
         assert (score == 500);
         System.out.println(score); // output 500
 
-
+        // change string value
         name = "Panda";
 
         // if/else construct example
@@ -71,7 +71,6 @@ public class IfElseLoop {
 
         System.out.println(result + " : " + score);  // equals F:249
 
-
     /*
         Missing else blocks
 
@@ -80,7 +79,6 @@ public class IfElseLoop {
      */
 
         if(score == 249) System.out.println("Valid IF construct");
-
 
     /*
         The presence and absence of the {} within the If construct

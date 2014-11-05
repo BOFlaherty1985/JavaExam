@@ -93,7 +93,7 @@ public class Operators {
               used to determine whether two numeric values are greater than (>, >=) or less than (<, <=) each other.
             * You can't compare incomparable values. For example, you can't compare a boolean with an int, a char or a
               floating-point number. If you try to do this, your code will not compile.
-            * The operators equal to (==) and not euqal to (!=) can be used to compare all types of primitives: char, int
+            * The operators equal to (==) and not equal to (!=) can be used to compare all types of primitives: char, int
               short, byte, float, double and boolean.
             * == returns true if the primitive values you're comparing are equal.
             * != returns true if the primitive values you're comparing are not equal.

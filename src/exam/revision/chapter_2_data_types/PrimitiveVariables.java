@@ -17,8 +17,7 @@ public class PrimitiveVariables {
 
             Remember that only two types of Primitive data types are shorted, char and int.
 
-         */
-
+        */
 
         // Numeric Primitive Types
         byte b = 5;
