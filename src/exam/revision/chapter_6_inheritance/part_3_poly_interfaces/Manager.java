@@ -14,4 +14,5 @@ public class Manager extends Employee {
         System.out.println("QA Complete");
         System.out.println("code delivered with release notes");
     }
+
 }

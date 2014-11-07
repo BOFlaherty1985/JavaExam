@@ -269,4 +269,5 @@ public class StringClass {
         System.out.println(example5.substring(0, 2).startsWith("A"));
 
     }
+
 }

@@ -33,4 +33,5 @@ public class Manager extends Employee implements Interviewer, Trainable {
     public void attendTraining() {
         System.out.println("Manager - Attending Training...");
     }
+
 }

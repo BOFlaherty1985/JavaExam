@@ -113,7 +113,6 @@ public class StringBuilderMethod {
         delete()
 
 
-
         length()
 
         trimToSize()
